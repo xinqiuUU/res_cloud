@@ -1,0 +1,4 @@
+#mybatis-plus 开启sql语句日志
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #打印sql

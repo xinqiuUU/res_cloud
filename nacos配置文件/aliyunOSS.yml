@@ -1,0 +1,6 @@
+aliyun:
+  oss:
+    endpoint: oss-cn-beijing.aliyuncs.com #oss域名
+    accessKeyId:   #阿里云accessKeyId
+    accessKeySecret:  #阿里云accessKeySecret
+    bucketName:   #oss桶名

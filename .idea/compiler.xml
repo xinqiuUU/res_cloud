@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="res-security" />
+        <module name="res-entity" />
+        <module name="test_Feign" />
+        <module name="res-api" />
+        <module name="res-consumer" />
+        <module name="res-food" />
+        <module name="test_predicates_factorymethod" />
+        <module name="res-cart" />
+        <module name="test_sentinel" />
+        <module name="cache_Bucket" />
+        <module name="res-order" />
+        <module name="test_builderPattern_fluentApi" />
+        <module name="gateway" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cache_Bucket" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="res-api" options="-parameters" />
+      <module name="res-cart" options="-parameters" />
+      <module name="res-consumer" options="-parameters" />
+      <module name="res-entity" options="-parameters" />
+      <module name="res-food" options="-parameters" />
+      <module name="res-order" options="-parameters" />
+      <module name="res-security" options="-parameters" />
+      <module name="res_cloud" options="" />
+      <module name="test_Feign" options="-parameters" />
+      <module name="test_builderPattern_fluentApi" options="-parameters" />
+      <module name="test_predicates_factorymethod" options="-parameters" />
+      <module name="test_sentinel" options="-parameters" />
+    </option>
+  </component>
+</project>

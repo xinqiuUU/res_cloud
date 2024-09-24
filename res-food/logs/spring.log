@@ -1,0 +1,32 @@
+2024-09-03T19:48:09.423+08:00  INFO 22560 --- [res-food] [main] com.yc.service.ResfoodBizImplTest        : Starting ResfoodBizImplTest using Java 17.0.4.1 with PID 22560 (started by DELL in C:\ideaprojects\res_cloud\res-food)
+2024-09-03T19:48:09.428+08:00  INFO 22560 --- [res-food] [main] com.yc.service.ResfoodBizImplTest        : The following 1 profile is active: "dev"
+2024-09-03T19:48:10.739+08:00  INFO 22560 --- [res-food] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-03T19:48:10.743+08:00  INFO 22560 --- [res-food] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-03T19:48:10.779+08:00  INFO 22560 --- [res-food] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2024-09-03T19:48:11.071+08:00  INFO 22560 --- [res-food] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=65df4f87-b6b5-3e8a-a904-6c3bf2cadf36
+2024-09-03T19:48:12.204+08:00  INFO 22560 --- [res-food] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2024-09-03T19:48:12.783+08:00  INFO 22560 --- [res-food] [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2024-09-03T19:48:15.407+08:00  INFO 22560 --- [res-food] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-09-03T19:48:17.620+08:00  INFO 22560 --- [res-food] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-09-03T19:48:17.641+08:00  INFO 22560 --- [res-food] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2024-09-03T19:48:17.725+08:00  INFO 22560 --- [res-food] [main] com.yc.service.ResfoodBizImplTest        : Started ResfoodBizImplTest in 9.908 seconds (process running for 10.784)
+2024-09-03T19:48:19.242+08:00  INFO 22560 --- [res-food] [main] com.yc.service.ResfoodBizImplTest        : 新增菜品编号:15
+2024-09-03T19:48:19.330+08:00  INFO 22560 --- [res-food] [main] com.yc.service.ResfoodBizImplTest        : 15条数据
+2024-09-03T19:48:19.338+08:00  INFO 22560 --- [res-food] [main] com.yc.service.ResfoodBizImplTest        : 15条数据
+2024-09-03T19:48:19.394+08:00  INFO 22560 --- [res-food] [main] com.yc.service.ResfoodBizImplTest        : Resfood(fid=1, fname=素炒莴笋丝, normprice=22.0, realprice=20.0, detail=营养丰富, fphoto=500008.jpg, detailCount=null)
+2024-09-03T19:48:19.396+08:00  INFO 22560 --- [res-food] [main] com.yc.service.ResfoodBizImplTest        : Resfood(fid=1, fname=素炒莴笋丝, normprice=22.0, realprice=20.0, detail=营养丰富, fphoto=500008.jpg, detailCount=null)
+2024-09-03T19:48:19.481+08:00  INFO 22560 --- [res-food] [main] com.yc.service.ResfoodBizImpl            : 总记录数:15
+2024-09-03T19:48:19.482+08:00  INFO 22560 --- [res-food] [main] com.yc.service.ResfoodBizImpl            : 当前页:1
+2024-09-03T19:48:19.482+08:00  INFO 22560 --- [res-food] [main] com.yc.service.ResfoodBizImpl            : 每页记录数:5
+2024-09-03T19:48:19.486+08:00  INFO 22560 --- [res-food] [main] com.yc.service.ResfoodBizImplTest        : 15条数据
+2024-09-03T19:48:19.488+08:00  INFO 22560 --- [res-food] [main] com.yc.service.ResfoodBizImplTest        : 15条数据
+2024-09-03T19:48:19.509+08:00  INFO 22560 --- [res-food] [main] com.yc.service.ResfoodBizImpl            : 总记录数:0
+2024-09-03T19:48:19.510+08:00  INFO 22560 --- [res-food] [main] com.yc.service.ResfoodBizImpl            : 当前页:1
+2024-09-03T19:48:19.510+08:00  INFO 22560 --- [res-food] [main] com.yc.service.ResfoodBizImpl            : 每页记录数:10
+2024-09-03T19:48:19.511+08:00  INFO 22560 --- [res-food] [main] com.yc.service.ResfoodBizImplTest        : 0条数据
+2024-09-03T19:48:19.518+08:00  INFO 22560 --- [res-food] [main] com.yc.service.ResfoodBizImpl            : 总记录数:0
+2024-09-03T19:48:19.518+08:00  INFO 22560 --- [res-food] [main] com.yc.service.ResfoodBizImpl            : 当前页:1
+2024-09-03T19:48:19.518+08:00  INFO 22560 --- [res-food] [main] com.yc.service.ResfoodBizImpl            : 每页记录数:10
+2024-09-03T19:48:19.520+08:00  INFO 22560 --- [res-food] [main] com.yc.service.ResfoodBizImplTest        : 0条数据
+2024-09-03T19:48:19.685+08:00  INFO 22560 --- [res-food] [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2024-09-03T19:48:19.695+08:00  INFO 22560 --- [res-food] [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

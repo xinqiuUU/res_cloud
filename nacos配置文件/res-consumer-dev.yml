@@ -1,0 +1,42 @@
+
+#日志配置
+logging:
+ file:
+   path: logs
+ level:
+   root: info
+# 服务端口
+server:
+  port: ${port:5050}
+
+# 热部署
+spring:
+  cloud:
+    sentinel:
+      transport:
+        port: 25050                # 客户端与控制台通信的端口
+        dashboard: localhost:9999  # Sentinel 控制台地址
+      eager: true                  # 启动时立即加载 Sentinel 配置
+      web-context-unify: false     #关闭sontext整合，链路流控才能生效
+  
+  devtools:
+    restart:
+      enabled: true  #是否之车自动重启(热部署
+      additional-paths: src/main/java #设置监听源码变更的目录 -> 这个目录中的文件变更，则重启
+      exclude: static/** #排除监听的目录，不重启
+  #swagger
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+#jmx
+management:
+ endpoints:
+   web:    #允许web 形式暴露的端点
+     exposure:
+       include: "*"
+   jmx:    #允许jmx 形式暴露的端点
+     exposure:
+       include: "*"  # 默认情况下，一些敏感端点是禁用的，可以通过此配置启用
+
+

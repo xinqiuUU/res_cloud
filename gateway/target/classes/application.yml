@@ -1,0 +1,82 @@
+server:
+  port: 20001
+
+# 链路追踪 配置
+management:
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans
+  tracing:
+    sampling:
+      probability: 1.0  # 采样率 1.0 表示全部采样  0.0 表示全部不采样
+  endpoints:
+    web:
+      exposure:
+        include: gateway,health,info
+  endpoint:
+    gateway:
+      enabled: true
+
+
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      # 浏览器  跨域问题的解决
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"  # 允许所有的域名
+            allowedMethods: "*"  # 允许所有的方法
+            allowedHeaders: "*"  # 允许所有的头
+#            allowCredentials: true  # 允许携带cookie
+
+      # 路由配置
+      routes:
+        - id: res-food
+#          uri:  http://localhost:8080/
+          uri: lb://res-food  # 服务名 负载均衡 还有一种写法 http://localhost:8080/  直接写ip地址
+          predicates:
+            - Path=/resfood/**
+
+
+          # 购物车 服务
+        - id: res-cart
+          uri: lb://res-cart
+          # 过滤器工厂
+          filters:
+            - TokenFilterFactory   # 过滤器工厂 类的全路径
+          # 断言工厂
+          predicates:
+            # PathRoutePredicateFactory 这个是一个路径断言工厂
+            - Path=/rescart/**
+            # ServiceTimeBetweenRoutePredicateFactory 自定义时间断言工厂
+#            - ServiceTimeBetween=上午06:00,下午03:30 # 服务时间在6点到6点之间
+            # BetweenRoutePredicateFactory            gateway内置时间断言工厂
+#            - Between=2024-09-10T14:00:00+08:00,2024-09-10T15:28:19+08:00
+            # 时间在2024年9月10号的6点到20点之间
+
+          # 订单服务
+        - id: res-order
+          uri: lb://res-order
+          filters:
+            - TokenFilterFactory
+          predicates:
+            - Path=/resorder/**
+
+        - id: res-security
+          uri: lb://res-security
+          predicates:
+            - Path=/ressecurity/**
+
+        - id: tobaidu
+          uri: http://www.baidu.com
+          predicates:
+            - Path=/**     # 路径匹配 此断言匹配路径  以/开头
+
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos

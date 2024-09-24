@@ -1,0 +1,21 @@
+spring:
+  #  QQ邮箱配置
+  mail:
+    host: smtp.qq.com
+    username: 666
+    password:
+    default-encoding: UTF-8
+    default-charset: UTF-8
+    default-reply-to:  #默认的回复邮箱地址
+    properties:
+      mail:
+        smtp:
+          from:  #发送邮件的邮箱地址
+          auth: true
+          starttls:
+            enable: true
+            required: true
+  #jms  activemq 消息中间件
+  activemq:
+    broker-url: tcp://localhost:61616
+    queueName: bankMessages

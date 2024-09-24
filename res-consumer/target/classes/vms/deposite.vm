@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>中国银行账户变动提示邮件</title>
+    </head>
+    <body>
+        <div class="container">
+            <p>发件人:中国银行衡阳支行 </p>
+            <p>收件人:${accountid} ${email}</p>
+            <h5>主题:${subject}</h5>
+            <p>尊敬的:${accountid}</p>
+            <p>正文:您的账户${accountid}于${optime}发一次存款操作,操作金额为:${money}元,操作后账户余额为:${balance}</p>
+            <p>祝好!!</p>
+            <p>中国银行衡阳支行</p>
+        </div>
+        <div class="footer">
+            <p>${currentDate}</p>
+        </div>
+    </body>
+</html>

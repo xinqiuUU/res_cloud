@@ -1,0 +1,32 @@
+Starting GateWayApp using Java 17.0.4.1 with PID 1780 (C:\ideaprojects\res_cloud\gateway\target\classes started by DELL in C:\ideaprojects\res_cloud)
+No active profile set, falling back to 1 default profile: "default"
+BeanFactory id=4dd1059d-b5d6-38ba-b15a-e0b108429362
+Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Cannot determine local hostname
+Cannot determine local hostname
+Loaded RoutePredicateFactory [ServiceTimeBetween]
+Loaded RoutePredicateFactory [After]
+Loaded RoutePredicateFactory [Before]
+Loaded RoutePredicateFactory [Between]
+Loaded RoutePredicateFactory [Cookie]
+Loaded RoutePredicateFactory [Header]
+Loaded RoutePredicateFactory [Host]
+Loaded RoutePredicateFactory [Method]
+Loaded RoutePredicateFactory [Path]
+Loaded RoutePredicateFactory [Query]
+Loaded RoutePredicateFactory [ReadBody]
+Loaded RoutePredicateFactory [RemoteAddr]
+Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+Loaded RoutePredicateFactory [Weight]
+Loaded RoutePredicateFactory [CloudFoundryRouteService]
+Cannot determine local hostname
+Exposing 3 endpoint(s) beneath base path '/actuator'
+Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+Netty started on port 20001
+Cannot determine local hostname
+Cannot determine local hostname
+Started GateWayApp in 11.902 seconds (process running for 12.832)
